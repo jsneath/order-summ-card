@@ -1,37 +1,78 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;500;700;900&display=swap');
 
 body {
   background-image: url(./images/pattern-background-mobile.svg);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-size: 1440px 437px;
   background-color: rgb(227, 237, 255);
   font-family: 'Red Hat Display', sans-serif;
-  font-weight: lighter;
+  font-size: 16px;
+
   display: flex;
     justify-content: center;
     align-items: center;
 }
-/* p {
-  font-size: 16px;
- 
-} */
 
-img{
+.ordersumm {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+p {
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 22px;
+  color:hsl(223, 47%, 23%);
+}
+
+.hero_image{
   max-width: 100%;
   margin: 0 auto;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
 
+
+
 .card{
-  width: 380px;
+  width: 415px;
   margin: 0 auto;
   margin-top: 40px;
   border-radius: 20px;
   text-align: center;
-  padding-bottom: 2rem;
+  box-shadow: 0px 5px 30px hsl(224, 23%, 55%);
+  
+}
+
+.price-plan  {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 12px;
+  margin-top: -5px;
+}
+
+.annual-plan {
+  font-weight: 900;
+  margin-right: 56px;
+  
+}
+
+.price {
+  font-weight: 500;
+  margin-right: 56px;
+}
+
+.change {
+  text-decoration-line: underline;
+  font-weight: 700;
+  margin-top: 10px;
   
 }
 
@@ -42,13 +83,19 @@ img{
   padding-bottom: 40px;
 }
 
-@media screen and (min-width: 768px){
-
-  body{
-      background-image: url(./images/pattern-background-desktop.svg);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-  }
-  
+.btn-primary {
+  color: #fff;
+  background-color: hsl(245, 75%, 52%);
+  border-color: hsl(245, 75%, 52%);
+  box-shadow: 0px 5px 30px hsl(224, 23%, 55%);
 }
+
+.btn-group-lg>.btn, .btn-lg {
+  padding: .5rem 1rem;
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: 12px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
